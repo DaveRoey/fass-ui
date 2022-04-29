@@ -37,7 +37,7 @@ jobs:
         repository_name: 'faas-ui'
         user_name: ${{ secrets.REPOSITORY_NAME }}
         password: ${{ secrets.REPOSITORY_PASSWORD }}
-        platforms: linux/arm64
+        platform: linux/arm64
         image_version: 'v1.0'
         docker_file: '.'
     - name: executing remote ssh commands using password
