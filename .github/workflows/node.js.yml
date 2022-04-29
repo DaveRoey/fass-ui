@@ -30,13 +30,14 @@ jobs:
     - run: npm run build --if-present
     - name: Build Docker Image
       id: buildAndPushImage
-      uses: risfeng/docker-image-build-push-action@v1.0
+      uses: DaveRoey/docker-image-build-push-action@v1.0
       with:
         registry_url: 'registry.cn-hangzhou.aliyuncs.com'
         namespaces: 'daveroey'
         repository_name: 'faas-ui'
         user_name: ${{ secrets.REPOSITORY_NAME }}
         password: ${{ secrets.REPOSITORY_PASSWORD }}
+        platforms: linux/arm64
         image_version: 'v1.0'
         docker_file: '.'
     - name: executing remote ssh commands using password
