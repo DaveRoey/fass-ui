@@ -30,7 +30,7 @@ jobs:
     - run: npm run build --if-present
     - name: Build Docker Image
       id: buildAndPushImage
-      uses: DaveRoey/docker-image-build-push-action@v1.0
+      uses: DaveRoey/docker-image-build-push-action@v1.1
       with:
         registry_url: 'registry.cn-hangzhou.aliyuncs.com'
         namespaces: 'daveroey'
