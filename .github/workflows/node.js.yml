@@ -48,4 +48,4 @@ jobs:
         password: ${{ secrets.SERVER_PASS }}
         port: ${{ secrets.PORT }}
         script: |-
-          docker service update --image registry.cn-hangzhou.aliyuncs.com/daveroey/faas-ui:v1.0 --force --no-resolve-image --with-registry-auth  faas-ui
+          docker service update --image registry.cn-hangzhou.aliyuncs.com/daveroey/faas-ui:v1.0 --force --no-resolve-image --with-registry-auth  faas_ui
