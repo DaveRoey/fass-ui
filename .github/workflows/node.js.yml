@@ -44,7 +44,7 @@ jobs:
         context: .
         push: true
         platforms: linux/amd64,linux/arm64
-        tags: daveroey/faas-ui:v1.0
+        tags: registry.cn-hangzhou.aliyuncs.com/daveroey/faas-ui:v1.0
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
